@@ -1,0 +1,116 @@
+body{
+    margin:0;
+    padding:0;
+    background: linear-gradient(45deg,#d2d5d7,#e3e5e3);;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background: linear-gradient(45deg,#0085ff,#14ff37);
+    color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+h1{
+    margin:0;
+    font-size: 36px;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.recipe-list{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+.recipe-item{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0);
+    border-radius: 7px;
+    overflow:hidden;
+}
+
+.recipe-item img{
+    width: 150px;
+    height: 150px;
+    object-fit:cover;
+    background: cover;
+    transition: background 0.3s ease-in-out;
+}
+
+.recipe-item img:hover{
+    scale:1.02;
+}
+
+.recipe-item h2{
+    margin:0;
+    font-size: 20px;
+    padding: 10px;
+    min-width:200px;
+}
+
+.recipe-item p{
+    margin:0;
+    padding:10px;
+    color : #807f7f;
+}
+
+.recipe-item a{
+    background: linear-gradient(45deg,#0085ff,#14ff37);;
+    color:#fff;
+    min-width:150px;
+    padding:10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.recipe-item a:hover{
+    background: linear-gradient(45deg,#266aaa,#4fdb64);;
+    scale:1.15;
+}
+
+@media screen and (max-width:768px){
+
+    .recipe-item{
+        margin: 4%;
+        margin-bottom: 5%;
+        border:none;
+        display: flex;
+        flex-direction : column;
+    }
+
+    .recipe-item img{
+        width:100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .recipe-item h2{
+        font-size: 20px;
+        padding:0px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .recipe-item p{
+        font-size: 14px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .recipe-item a{
+        width:100%;
+        text-align: center;
+    }
+
+}
